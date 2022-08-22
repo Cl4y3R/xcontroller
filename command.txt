@@ -1,0 +1,17 @@
+cd xcontroller
+source /opt/ros/foxy/setup.bash
+colcon build --packages-select xcontroller
+
+source /opt/ros/foxy/setup.bash
+source install/setup.bash
+lgsvl_bridge
+
+// open another terminal to run our algorithm
+source /opt/ros/foxy/setup.bash
+source install/setup.bash
+ros2 run xcontroller xcontroller
+
+// open another terminal to monitor topic subs and pubs
+source /opt/ros/foxy/setup.bash
+source ros2 topic list
+source ros2 topic echo xxx

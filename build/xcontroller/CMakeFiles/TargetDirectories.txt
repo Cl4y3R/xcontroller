@@ -1,0 +1,10 @@
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/install/strip.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/install/local.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/install.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/list_install_components.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/rebuild_cache.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/edit_cache.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/test.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/xcontroller.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/xcontroller_uninstall.dir
+/home/cl4y3r/xcontroller/build/xcontroller/CMakeFiles/uninstall.dir

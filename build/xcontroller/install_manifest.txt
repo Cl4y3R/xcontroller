@@ -1,0 +1,16 @@
+/home/cl4y3r/xcontroller/install/xcontroller/lib/xcontroller/xcontroller
+/home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/package_run_dependencies/xcontroller
+/home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/parent_prefix_path/xcontroller
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.sh
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.dsv
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.sh
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.dsv
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.bash
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.sh
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.zsh
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.dsv
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.dsv
+/home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/packages/xcontroller
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig.cmake
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig-version.cmake
+/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.xml

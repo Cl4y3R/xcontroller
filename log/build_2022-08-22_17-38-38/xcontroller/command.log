@@ -1,0 +1,2 @@
+Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/xcontroller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/xcontroller/install/xcontroller
+Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/xcontroller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/xcontroller/install/xcontroller

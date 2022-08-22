@@ -1,0 +1,4 @@
+source;share/xcontroller/local_setup.bash
+source;share/xcontroller/local_setup.dsv
+source;share/xcontroller/local_setup.sh
+source;share/xcontroller/local_setup.zsh

@@ -1,0 +1,14 @@
+load("shalunmap.mat");
+x = data.ActorSpecifications.Waypoints(:,1);
+y = data.ActorSpecifications.Waypoints(:,2);
+waypoint = [x y];
+refPath = referencePathFrenet(waypoint);
+connector = trajectoryGeneratorFrenet(refPath);
+initstate = [0,0,0,0,0,0];
+finalstate = [350,0,0,0,0,0];
+[frenetGlob, trajGlob] = connect(connector,initstate,finalstate,10);
+show(refPath);
+hold on;
+axis equal;
+plot(trajGlob.Trajectory(:,1),trajGlob.Trajectory(:,2),'k');
+writematrix([trajGlob.Trajectory(:,1),trajGlob.Trajectory(:,2),trajGlob.Trajectory(:,3),trajGlob.Trajectory(:,4)],"shalun.csv");

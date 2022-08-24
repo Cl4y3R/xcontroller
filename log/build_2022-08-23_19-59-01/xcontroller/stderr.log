@@ -1,0 +1,11 @@
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:163:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  163 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x)
+      |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:163:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  163 | double ChassisController::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K)
+      |                                                                      [01;35m[K~~~~~~~^~~~~[m[K
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:190:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  190 |     double [01;35m[Kerr_s[m[K = (tor * distance)(0,0);
+      |            [01;35m[K^~~~~[m[K

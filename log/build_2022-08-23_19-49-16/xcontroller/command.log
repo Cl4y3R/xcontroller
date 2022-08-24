@@ -1,0 +1,4 @@
+Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller
+Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller

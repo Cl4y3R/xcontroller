@@ -1,0 +1,189 @@
+[0.000000] (-) TimerEvent: {}
+[0.001026] (xcontroller) JobQueued: {'identifier': 'xcontroller', 'dependencies': OrderedDict()}
+[0.001068] (xcontroller) JobStarted: {'identifier': 'xcontroller'}
+[0.013344] (xcontroller) JobProgress: {'identifier': 'xcontroller', 'progress': 'cmake'}
+[0.013924] (xcontroller) JobProgress: {'identifier': 'xcontroller', 'progress': 'build'}
+[0.014592] (xcontroller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/xcontroller/build/xcontroller', '--', '-j16', '-l16'], 'cwd': '/home/cl4y3r/xcontroller/build/xcontroller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/cl4y3r'), ('USER', 'cl4y3r'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{7cf7cbfb-0237-5aeb-9357-22c79077edaa}'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu20.04'), ('CARLA_ROOT', '/mnt/d/CARLA_0.9.12'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/xcontroller/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('NAME', 'Z99'), ('WSL_INTEROP', '/run/WSL/22109_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('WT_SESSION', '4e76ec09-44cb-4bab-bf4e-e4d5d600c0f6'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/xcontroller/install/xcontroller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cl4y3r/xcontroller/build/xcontroller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages::/mnt/d/CARLA_0.9.12/PythonAPI/carla/dist/carla-0.9.12-py3.7-linux-x86_64.egg:/mnt/d/CARLA_0.9.12/PythonAPI/carla'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/xcontroller/install/xcontroller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[0.049338] (xcontroller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target xcontroller\x1b[0m\n'}
+[0.069546] (xcontroller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o\x1b[0m\n'}
+[0.099271] (-) TimerEvent: {}
+[0.199675] (-) TimerEvent: {}
+[0.300024] (-) TimerEvent: {}
+[0.400367] (-) TimerEvent: {}
+[0.500713] (-) TimerEvent: {}
+[0.601079] (-) TimerEvent: {}
+[0.701452] (-) TimerEvent: {}
+[0.801833] (-) TimerEvent: {}
+[0.902246] (-) TimerEvent: {}
+[1.002656] (-) TimerEvent: {}
+[1.103038] (-) TimerEvent: {}
+[1.203385] (-) TimerEvent: {}
+[1.303725] (-) TimerEvent: {}
+[1.404061] (-) TimerEvent: {}
+[1.504407] (-) TimerEvent: {}
+[1.604781] (-) TimerEvent: {}
+[1.705185] (-) TimerEvent: {}
+[1.805525] (-) TimerEvent: {}
+[1.905877] (-) TimerEvent: {}
+[2.006264] (-) TimerEvent: {}
+[2.106622] (-) TimerEvent: {}
+[2.185806] (xcontroller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.186148] (xcontroller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:184:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerr_s\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.186291] (xcontroller) StderrLine: {'line': b'  184 |     double \x1b[01;35m\x1b[Kerr_s\x1b[m\x1b[K = (tor * distance)(0,0); //arc length between match point and projection point\n'}
+[2.186393] (xcontroller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.206762] (-) TimerEvent: {}
+[2.307164] (-) TimerEvent: {}
+[2.407590] (-) TimerEvent: {}
+[2.507964] (-) TimerEvent: {}
+[2.608347] (-) TimerEvent: {}
+[2.708709] (-) TimerEvent: {}
+[2.809090] (-) TimerEvent: {}
+[2.909458] (-) TimerEvent: {}
+[3.009799] (-) TimerEvent: {}
+[3.110140] (-) TimerEvent: {}
+[3.210482] (-) TimerEvent: {}
+[3.310868] (-) TimerEvent: {}
+[3.411208] (-) TimerEvent: {}
+[3.511560] (-) TimerEvent: {}
+[3.611920] (-) TimerEvent: {}
+[3.712266] (-) TimerEvent: {}
+[3.812599] (-) TimerEvent: {}
+[3.912930] (-) TimerEvent: {}
+[4.013272] (-) TimerEvent: {}
+[4.113608] (-) TimerEvent: {}
+[4.213930] (-) TimerEvent: {}
+[4.314290] (-) TimerEvent: {}
+[4.414709] (-) TimerEvent: {}
+[4.515052] (-) TimerEvent: {}
+[4.615470] (-) TimerEvent: {}
+[4.715845] (-) TimerEvent: {}
+[4.816228] (-) TimerEvent: {}
+[4.916592] (-) TimerEvent: {}
+[5.016970] (-) TimerEvent: {}
+[5.117329] (-) TimerEvent: {}
+[5.217672] (-) TimerEvent: {}
+[5.318020] (-) TimerEvent: {}
+[5.418364] (-) TimerEvent: {}
+[5.518719] (-) TimerEvent: {}
+[5.619139] (-) TimerEvent: {}
+[5.719484] (-) TimerEvent: {}
+[5.819837] (-) TimerEvent: {}
+[5.920158] (-) TimerEvent: {}
+[6.020487] (-) TimerEvent: {}
+[6.120874] (-) TimerEvent: {}
+[6.221212] (-) TimerEvent: {}
+[6.321577] (-) TimerEvent: {}
+[6.421980] (-) TimerEvent: {}
+[6.522386] (-) TimerEvent: {}
+[6.622803] (-) TimerEvent: {}
+[6.723157] (-) TimerEvent: {}
+[6.823538] (-) TimerEvent: {}
+[6.923892] (-) TimerEvent: {}
+[7.024242] (-) TimerEvent: {}
+[7.124583] (-) TimerEvent: {}
+[7.224929] (-) TimerEvent: {}
+[7.325262] (-) TimerEvent: {}
+[7.425635] (-) TimerEvent: {}
+[7.525987] (-) TimerEvent: {}
+[7.626352] (-) TimerEvent: {}
+[7.726706] (-) TimerEvent: {}
+[7.827061] (-) TimerEvent: {}
+[7.927453] (-) TimerEvent: {}
+[8.027819] (-) TimerEvent: {}
+[8.128160] (-) TimerEvent: {}
+[8.228519] (-) TimerEvent: {}
+[8.328839] (-) TimerEvent: {}
+[8.429161] (-) TimerEvent: {}
+[8.529488] (-) TimerEvent: {}
+[8.629817] (-) TimerEvent: {}
+[8.730147] (-) TimerEvent: {}
+[8.830479] (-) TimerEvent: {}
+[8.930808] (-) TimerEvent: {}
+[9.031162] (-) TimerEvent: {}
+[9.131484] (-) TimerEvent: {}
+[9.231797] (-) TimerEvent: {}
+[9.332108] (-) TimerEvent: {}
+[9.432425] (-) TimerEvent: {}
+[9.532767] (-) TimerEvent: {}
+[9.633096] (-) TimerEvent: {}
+[9.733457] (-) TimerEvent: {}
+[9.833849] (-) TimerEvent: {}
+[9.934242] (-) TimerEvent: {}
+[10.034614] (-) TimerEvent: {}
+[10.134961] (-) TimerEvent: {}
+[10.235343] (-) TimerEvent: {}
+[10.335687] (-) TimerEvent: {}
+[10.436011] (-) TimerEvent: {}
+[10.536334] (-) TimerEvent: {}
+[10.636649] (-) TimerEvent: {}
+[10.736954] (-) TimerEvent: {}
+[10.837298] (-) TimerEvent: {}
+[10.937657] (-) TimerEvent: {}
+[11.037982] (-) TimerEvent: {}
+[11.138303] (-) TimerEvent: {}
+[11.238625] (-) TimerEvent: {}
+[11.338965] (-) TimerEvent: {}
+[11.439341] (-) TimerEvent: {}
+[11.539729] (-) TimerEvent: {}
+[11.640132] (-) TimerEvent: {}
+[11.740520] (-) TimerEvent: {}
+[11.840926] (-) TimerEvent: {}
+[11.941273] (-) TimerEvent: {}
+[12.041660] (-) TimerEvent: {}
+[12.142029] (-) TimerEvent: {}
+[12.242385] (-) TimerEvent: {}
+[12.342722] (-) TimerEvent: {}
+[12.443044] (-) TimerEvent: {}
+[12.543374] (-) TimerEvent: {}
+[12.643713] (-) TimerEvent: {}
+[12.744043] (-) TimerEvent: {}
+[12.844390] (-) TimerEvent: {}
+[12.944749] (-) TimerEvent: {}
+[13.045075] (-) TimerEvent: {}
+[13.145413] (-) TimerEvent: {}
+[13.245731] (-) TimerEvent: {}
+[13.346055] (-) TimerEvent: {}
+[13.446414] (-) TimerEvent: {}
+[13.546738] (-) TimerEvent: {}
+[13.647072] (-) TimerEvent: {}
+[13.747420] (-) TimerEvent: {}
+[13.847765] (-) TimerEvent: {}
+[13.948121] (-) TimerEvent: {}
+[14.048483] (-) TimerEvent: {}
+[14.148841] (-) TimerEvent: {}
+[14.249213] (-) TimerEvent: {}
+[14.349687] (-) TimerEvent: {}
+[14.442427] (xcontroller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable xcontroller\x1b[0m\n'}
+[14.449793] (-) TimerEvent: {}
+[14.550150] (-) TimerEvent: {}
+[14.650574] (-) TimerEvent: {}
+[14.751104] (-) TimerEvent: {}
+[14.851456] (-) TimerEvent: {}
+[14.901407] (xcontroller) StdoutLine: {'line': b'[100%] Built target xcontroller\n'}
+[14.909354] (xcontroller) CommandEnded: {'returncode': 0}
+[14.931584] (xcontroller) JobProgress: {'identifier': 'xcontroller', 'progress': 'install'}
+[14.941031] (xcontroller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cl4y3r/xcontroller/build/xcontroller'], 'cwd': '/home/cl4y3r/xcontroller/build/xcontroller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/cl4y3r'), ('USER', 'cl4y3r'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{7cf7cbfb-0237-5aeb-9357-22c79077edaa}'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu20.04'), ('CARLA_ROOT', '/mnt/d/CARLA_0.9.12'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/xcontroller/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('NAME', 'Z99'), ('WSL_INTEROP', '/run/WSL/22109_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('WT_SESSION', '4e76ec09-44cb-4bab-bf4e-e4d5d600c0f6'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/xcontroller/install/xcontroller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/cl4y3r/xcontroller/build/xcontroller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages::/mnt/d/CARLA_0.9.12/PythonAPI/carla/dist/carla-0.9.12-py3.7-linux-x86_64.egg:/mnt/d/CARLA_0.9.12/PythonAPI/carla'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/xcontroller/install/xcontroller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[14.946679] (xcontroller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.946942] (xcontroller) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/xcontroller/install/xcontroller/lib/xcontroller/xcontroller\n'}
+[14.951577] (-) TimerEvent: {}
+[14.954794] (xcontroller) StdoutLine: {'line': b'-- Set runtime path of "/home/cl4y3r/xcontroller/install/xcontroller/lib/xcontroller/xcontroller" to ""\n'}
+[14.955024] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/package_run_dependencies/xcontroller\n'}
+[14.955138] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/parent_prefix_path/xcontroller\n'}
+[14.955340] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.sh\n'}
+[14.955396] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.dsv\n'}
+[14.955443] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.sh\n'}
+[14.955499] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.dsv\n'}
+[14.955599] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.bash\n'}
+[14.955705] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.sh\n'}
+[14.955849] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.zsh\n'}
+[14.955956] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.dsv\n'}
+[14.956073] (xcontroller) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.dsv\n'}
+[14.956276] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/packages/xcontroller\n'}
+[14.956344] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig.cmake\n'}
+[14.956392] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig-version.cmake\n'}
+[14.956437] (xcontroller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.xml\n'}
+[14.957586] (xcontroller) CommandEnded: {'returncode': 0}
+[15.051756] (-) TimerEvent: {}
+[15.152153] (-) TimerEvent: {}
+[15.232326] (xcontroller) JobEnded: {'identifier': 'xcontroller', 'rc': 0}
+[15.233409] (-) EventReactorShutdown: {}

@@ -1,6 +1,5 @@
 #include "xcontroller.hpp"
 
-// 控制器
 ChassisController::ChassisController() : Node("mycontroller"){
     RCLCPP_INFO(this->get_logger(), "My chassis controller");
 
@@ -43,11 +42,6 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     ax = imu_msg->linear_acceleration.x; 
     ay = imu_msg->linear_acceleration.y;
     steer_angle = odometry_msg->front_wheel_angle;
-    //RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
-    //RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
-    //RCLCPP_INFO(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
-    //RCLCPP_INFO(this->get_logger(), "ACCX: %f [m/s-2], ACCY: %f [m/s-2]", ax, ay);
-    //RCLCPP_INFO(this->get_logger(), "Yaw Anlge: %f [rad]", phi);
 }
 
 void ChassisController::control_publisher()
@@ -55,7 +49,7 @@ void ChassisController::control_publisher()
     steer_control=lateral_controller(phi, phi_p, x, y, vx, vy);
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
-    control.acceleration_pct = 0.05;  //acc in percentage
+    control.acceleration_pct = 0.03;  //acc in percentage
     control.braking_pct = 0; //brake in percentage
     control.target_wheel_angle = steer_control; //steering angle in rad
     control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
@@ -160,10 +154,10 @@ bool ChassisController::riccati_solver(MatrixXd A, MatrixXd B, MatrixXd Q,
     return true;
 }
 
-double ChassisController::longitudinal_controller(double velocity_x, double acc_x)
+/*double ChassisController::longitudinal_controller(double velocity_x, double acc_x)
 {
     return 0; //need to create 2x1 vector which holds acc_pct and brake_pct
-}
+}*/
 
 double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
                                             double velocity_x, double velocity_y)
@@ -178,7 +172,7 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     double y_ref = reference_pos[1];
     double theta_ref = reference_pos[2];
     double kappa_ref = reference_pos[3];
-    //Matrix
+    //Assume that the curvature of the match point and projection point are same
     MatrixXd tor(1,2), nor(1,2), distance(2,1);
     tor(0,0) = cos(theta_ref);
     tor(0,1) = sin(theta_ref);
@@ -187,14 +181,15 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     distance(0,0) = pos_x - x_ref;
     distance(1,0) = pos_y - y_ref;
     double err_d = (nor * distance)(0,0);
-    double err_s = (tor * distance)(0,0);
-
+    double err_s = (tor * distance)(0,0); //arc length between match point and projection point
+    //theta_ref_new
+    double theta_ref_new = theta_ref + 0 * err_s; //not using err_s now, means match point = projection point
     //err_d_p
-    double err_d_p = velocity_y * cos(yaw - theta_ref) + velocity_x * sin(yaw - theta_ref);
-    double s_p = (velocity_x * cos(yaw - theta_ref) - velocity_y * sin(yaw - theta_ref)) / (1 - kappa_ref * err_d);
+    double err_d_p = velocity_y * cos(yaw - theta_ref_new) + velocity_x * sin(yaw - theta_ref_new);
+    double s_p = (velocity_x * cos(yaw - theta_ref_new) - velocity_y * sin(yaw - theta_ref_new)) / (1 - kappa_ref * err_d);
 
     //err_phi
-    double err_phi = sin(yaw - theta_ref);
+    double err_phi = sin(yaw - theta_ref_new);
 
     //err_phi_p
     double err_phi_p = yaw_rate - kappa_ref * s_p;
@@ -241,12 +236,12 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     Bd = B * dt;
     //solve lqr
     MatrixXd Q = MatrixXd::Zero(4,4);
-    Q(0,0) = 10;
-    Q(1,1) = 1;
-    Q(2,2) = 100;
-    Q(3,3) = 100;
+    Q(0,0) = 0.05;
+    Q(1,1) = 0;
+    Q(2,2) = 1;
+    Q(3,3) = 0;
     MatrixXd R = MatrixXd::Zero(1,1);
-    R(0,0) = 100;
+    R(0,0) = 1;
     MatrixXd K = MatrixXd::Zero(1,4);
     if(velocity_x > 0.001)
     {   
@@ -255,7 +250,7 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     }
     double forward_angle=kappa_ref * (lf + lr - lr * K(0,2) - (m * vx * vx / (lf + lr)) * 
                         ((lr / cf) + (lf / cr) * K(0,2) - (lf / cr)));
-    double target_steer_angle = -((-1 * K * err_state)(0,0) + forward_angle);//lgsvl turn left is negative
+    double target_steer_angle = -((-K * err_state)(0,0) + forward_angle);//lgsvl turn left is negative
     cout<<"steer control angle "<<target_steer_angle<<endl;
     return target_steer_angle;
 

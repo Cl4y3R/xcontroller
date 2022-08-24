@@ -1,0 +1,26 @@
+[0.017s] Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+[0.053s] [35m[1mScanning dependencies of target xcontroller[0m
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[14.548s] [100%] [32m[1mLinking CXX executable xcontroller[0m
+[15.017s] [100%] Built target xcontroller
+[15.042s] Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+[15.072s] Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller
+[15.078s] -- Install configuration: ""
+[15.078s] -- Installing: /home/cl4y3r/xcontroller/install/xcontroller/lib/xcontroller/xcontroller
+[15.083s] -- Set runtime path of "/home/cl4y3r/xcontroller/install/xcontroller/lib/xcontroller/xcontroller" to ""
+[15.083s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/package_run_dependencies/xcontroller
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/parent_prefix_path/xcontroller
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.sh
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/ament_prefix_path.dsv
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.sh
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/environment/path.dsv
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.bash
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.sh
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.zsh
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/local_setup.dsv
+[15.084s] -- Installing: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.dsv
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/ament_index/resource_index/packages/xcontroller
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig.cmake
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/cmake/xcontrollerConfig-version.cmake
+[15.084s] -- Up-to-date: /home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.xml
+[15.086s] Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller

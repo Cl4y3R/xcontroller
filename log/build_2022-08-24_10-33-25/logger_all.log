@@ -1,0 +1,106 @@
+[0.194s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'xcontroller']
+[0.194s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5b4b270100>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['xcontroller'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5b4b270100>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5b4b270640>)
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.232s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cl4y3r/xcontroller'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'xcontroller'
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.286s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/cl4y3r/xcontroller/install
+[0.290s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 260 installed packages in /opt/ros/foxy
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'xcontroller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'xcontroller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cl4y3r/xcontroller/build/xcontroller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cl4y3r/xcontroller/install/xcontroller', 'merge_install': False, 'path': '/home/cl4y3r/xcontroller', 'symlink_install': False, 'test_result_base': None}
+[0.342s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.347s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cl4y3r/xcontroller' with build type 'ament_cmake'
+[0.348s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cl4y3r/xcontroller'
+[0.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+[15.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+[15.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller
+[15.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xcontroller)
+[15.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/xcontroller/build/xcontroller
+[15.442s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller' for CMake module files
+[15.442s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller' for CMake config files
+[15.442s] Level 1:colcon.colcon_core.shell:create_environment_hook('xcontroller', 'cmake_prefix_path')
+[15.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.ps1'
+[15.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.dsv'
+[15.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.sh'
+[15.446s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib'
+[15.446s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/bin'
+[15.446s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib/pkgconfig/xcontroller.pc'
+[15.446s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib/python3.8/site-packages'
+[15.446s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/bin'
+[15.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.ps1'
+[15.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.dsv'
+[15.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.sh'
+[15.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.bash'
+[15.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.zsh'
+[15.450s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cl4y3r/xcontroller/install/xcontroller/share/colcon-core/packages/xcontroller)
+[15.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(xcontroller)
+[15.472s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller' for CMake module files
+[15.473s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller' for CMake config files
+[15.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('xcontroller', 'cmake_prefix_path')
+[15.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.ps1'
+[15.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.dsv'
+[15.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/hook/cmake_prefix_path.sh'
+[15.479s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib'
+[15.479s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/bin'
+[15.479s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib/pkgconfig/xcontroller.pc'
+[15.479s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/lib/python3.8/site-packages'
+[15.480s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/xcontroller/install/xcontroller/bin'
+[15.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.ps1'
+[15.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.dsv'
+[15.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.sh'
+[15.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.bash'
+[15.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/xcontroller/install/xcontroller/share/xcontroller/package.zsh'
+[15.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cl4y3r/xcontroller/install/xcontroller/share/colcon-core/packages/xcontroller)
+[15.483s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.484s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.484s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.484s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[15.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.497s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.497s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.500s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[15.500s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.503s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/xcontroller/install/local_setup.ps1'
+[15.503s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cl4y3r/xcontroller/install/_local_setup_util_ps1.py'
+[15.504s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/xcontroller/install/setup.ps1'
+[15.507s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/xcontroller/install/local_setup.sh'
+[15.507s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cl4y3r/xcontroller/install/_local_setup_util_sh.py'
+[15.507s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/xcontroller/install/setup.sh'
+[15.508s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/xcontroller/install/local_setup.bash'
+[15.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/xcontroller/install/setup.bash'
+[15.510s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/xcontroller/install/local_setup.zsh'
+[15.510s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/xcontroller/install/setup.zsh'

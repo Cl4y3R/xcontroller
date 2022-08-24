@@ -1,0 +1,4 @@
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:184:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  184 |     double [01;35m[Kerr_s[m[K = (tor * distance)(0,0); //arc length between match point and projection point
+      |            [01;35m[K^~~~~[m[K

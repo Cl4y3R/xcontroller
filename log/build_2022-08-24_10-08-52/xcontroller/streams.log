@@ -1,0 +1,18 @@
+[0.015s] Invoking command in '/home/cl4y3r/xcontroller/build/xcontroller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
+[0.057s] [35m[1mScanning dependencies of target xcontroller[0m
+[0.077s] [ 50%] [32mBuilding CXX object CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o[0m
+[2.074s] [01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)[m[K’:
+[2.074s] [01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:188:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+[2.074s]   188 |     [01;31m[Kdouble[m[K err_d_p = velocity_y * cos(yaw - theta_ref_new) + velocity_x * sin(yaw - theta_ref_new);
+[2.075s]       |     [01;31m[K^~~~~~[m[K
+[2.083s] [01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:198:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kerr_d_p[m[K’ was not declared in this scope; did you mean ‘[01m[Kerr_d[m[K’?
+[2.083s]   198 |     cout<<"err_d_p "<<[01;31m[Kerr_d_p[m[K<<endl;
+[2.083s]       |                       [01;31m[K^~~~~~~[m[K
+[2.083s]       |                       [32m[Kerr_d[m[K
+[2.165s] [01m[K/home/cl4y3r/xcontroller/src/xcontroller.cpp:184:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.165s]   184 |     double [01;35m[Kerr_s[m[K = (tor * distance)(0,0); //arc length between match point and projection point
+[2.165s]       |            [01;35m[K^~~~~[m[K
+[6.969s] make[2]: *** [CMakeFiles/xcontroller.dir/build.make:63: CMakeFiles/xcontroller.dir/src/xcontroller.cpp.o] Error 1
+[6.969s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/xcontroller.dir/all] Error 2
+[6.969s] make: *** [Makefile:141: all] Error 2
+[6.971s] Invoked command in '/home/cl4y3r/xcontroller/build/xcontroller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/xcontroller/build/xcontroller -- -j16 -l16
